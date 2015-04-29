@@ -6,5 +6,5 @@
 ###如果有什么不妥的话，我立马删除，在此先道歉了..
 <br/>
 1.wechat
-<br>
+<br/>
 ![WeChat](image/wechat.gif)
