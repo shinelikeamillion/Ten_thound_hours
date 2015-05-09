@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:text="音乐播放器"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放" />
+
+
+            <Button
+                android:id="@+id/btn_fastback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" &lt;&lt;快退" />
+            
+
+            <Button
+                android:id="@+id/btn_fastforward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 快进>> " />
+
+            <Button
+                android:id="@+id/btn_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂停" />
+
+        </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_mess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂无播放内容"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

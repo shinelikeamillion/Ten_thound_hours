@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+	<person id="1">
+		<name>zhangsan</name>
+		<age>23</age>
+	</person>
+	<person id="3">
+		<name>曹操</name>
+		<age>25</age>
+	</person>
+	<person id="4" is="true">
+		<name>诸葛亮</name>
+		<age>33</age>
+	</person>
+</people>

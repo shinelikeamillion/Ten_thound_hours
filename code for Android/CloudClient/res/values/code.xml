@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="initCode">//作者：SXT\n\npublic class Hello {\n\n\tpublic static void main(String[] args){\n\n\t\tSystem.out.println(\"Hello!\");\n\n\t}\n\n}</string>
+	<string name="CodeDemo">"//作者：SXT\n\npublic class $claName$ {\n\n\tpublic static void main(String[] args){\n\n\t\tSystem.out.println(\"\t\");\n\n\t}\n\n}"</string>
+	
+	<string name="for_insert">\n\tfor(int i = 0 ; i &lt; ? ; i++){\n\n\t}</string>
+	<string name="if_insert">\n\tif(?){\n\n\t}else{\n\n\t}</string>
+	<string name="syso_insert">\n\tSystem.out.println(?);</string>
+	<string name="int_insert">\n\tint a=0;</string>
+	<string name="String_insert">\n\tString str=\"?\";</string>
+	<string name="boolean_insert">\n\tboolean b=false;</string>
+</resources>

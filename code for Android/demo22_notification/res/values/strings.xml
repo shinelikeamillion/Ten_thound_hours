@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Demo22_notificationActivity!</string>
+    <string name="app_name">Demo22_notification</string>
+
+</resources>

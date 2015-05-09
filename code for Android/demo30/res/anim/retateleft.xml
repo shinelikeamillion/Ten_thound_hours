@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:interpolator="@android:anim/accelerate_interpolator"  
+        android:fromDegrees="+3600"  
+        android:toDegrees="0"  
+        android:pivotX="50%"  
+        android:pivotY="50%" 
+        android:duration="20000" 
+/>  
+<!-- 
+	pivotX 锚点(旋转中心点)位置 
+  	duration 完成一次动作需要的时间
+  	android:repeatCount 重复次数 -1表示 无限
+ -->

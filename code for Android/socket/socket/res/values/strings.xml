@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SocketActivity!</string>
+    <string name="app_name">Socket</string>
+    <string name="hint_IP">请输入对方IP</string>
+    <string name="hint_port">请输入端口</string>
+    <string name="btn_send">发送</string>
+
+</resources>

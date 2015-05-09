@@ -1,0 +1,6 @@
+Tween动画在Android中分为4类，它们分别是：
+AlphaAnimation(透明度动画)、
+TranslateAnimation(平移动画)、
+ScaleAnimation(缩放动画)、
+RotateAnimation(旋转动画)。
+都继承自android.view.Animation类，它们都是表示从一个状态A向状态B变化的一个过程，所以英文名字叫Tween动画、中文名叫：“补间动画”、“中间动画”。它们总的说来有两种实现方式：java code(java源代码)、xml(xml配置文件)

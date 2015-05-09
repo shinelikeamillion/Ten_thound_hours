@@ -1,0 +1,27 @@
+package com.sxt;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class Demo9Activity extends Activity {
+	private final String FILENAME = "myfile.txt";
+	private int mode = Context.MODE_PRIVATE;
+    private TextView tv;
+    private EditText edtContent;
+    private Button btnSave;
+    private Button btnRead;
+    private CheckBox isAppend;
+    @Override
+    public void onCreate(Bundle savedInstan

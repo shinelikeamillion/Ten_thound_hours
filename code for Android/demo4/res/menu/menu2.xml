@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/netset" android:title="应用搜索"/>
+	<item android:id="@+id/appDown" android:title="应用下载"/>
+	<item android:id="@+id/sysset" android:title="系统设置">
+		<menu>
+		    <item android:id="@+id/sub1" android:title="子菜单1"/>
+		    <item android:id="@+id/sub2" android:title="子菜单2"/>
+		</menu>    
+    </item>
+</menu>

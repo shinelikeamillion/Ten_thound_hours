@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, JavaInCloudActivity!</string>
+	<string name="app_name">JavaInCloud</string>
+	<string name="title">Java云编译</string>
+	<string name="RunButton">云编译运行</string>
+	<string name="ExitButton">退出</string>
+	<string name="IPButton">设置IP</string>
+	<string name="creatJava">.java</string>
+	<string-array name="list">
+		<item>for循环</item>
+		<item>if语句</item>
+		<item>sysout输出</item>
+		<item>int声明</item>
+		<item>String声明</item>
+		<item>boolean声明</item>
+	</string-array>
+</resources>

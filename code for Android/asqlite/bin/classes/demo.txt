@@ -1,0 +1,20 @@
+1.手动命令建库和建表等
+  a.cmd进入命令符
+  b.cd到sdk的tools目录，用到adb.exe和sqlite3.exe
+  c.输入adb shell 启动linux命令
+  d.#cd data
+  e.#cd data
+  f.#ls列出data文件夹下的文件及文件夹，找到自己的应用的文件夹
+  g.#cd com.zhp自己的文件夹
+  h.#mkdir databases创建数据库文件夹
+  i.#cd databases
+  j.#sqlite3 mytest.db创建数据库文件 有则打开，没有则创建并打开,进入sqlite指令
+  k..databases查看数据库文件
+2.开始建表
+  l.sqlite> create table myuser(uid integer primarykey,uname varchar(20));
+  2.sqlite> .tables查看所有的表
+  3.sqlite> insert into myuser values(1,'zhansan');
+  4.sqlite> select * from myuser 查看数据
+  5. sqlite> .mode column 可以定义查看的模式
+  
+  .........

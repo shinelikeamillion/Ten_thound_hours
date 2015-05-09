@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看电信运营商" />
+
+    <EditText
+        android:id="@+id/editText_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="number" >
+    </EditText>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/buttonDel"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="Del" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:onClick="inputNum"
+                android:text="Clear" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拨打电话" />
+
+</LinearLayout>

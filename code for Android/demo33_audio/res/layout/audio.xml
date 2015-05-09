@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mess"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="继续" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:id="@+id/button_vAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音量+" />
+
+
+        <Button
+            android:id="@+id/button_vSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音量-" />
+
+    </LinearLayout>
+
+</LinearLayout>

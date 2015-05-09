@@ -1,0 +1,13 @@
+Android中的资源可分为两大类：
+一种是放在assets目录下的一般是应用无法直接访问的原生资源，应用需要以二进制流的形式来读取；
+另一种是放在res目录的，可以通过R资源清单类访问，大部分时候提到Android应用资源是只res目录的资源。
+
+Android要求在res目录下用不同的子目录来保存不同的应用资源:
+/res/anim/ 存放定义补间动画的XML文件；
+/res/color/ 存放定义不同状态下颜色列表的XML文件；
+/res/drawable/ 存放各种位图文件(.png .9.png .jpg .gif等)，除此之外也可能是编译成各种Drawable对象的XML文件(BitmapDrawable， ShapeDrawable，StateListDrawable， NinePatchDrawable，AnimationDrawable等)；
+/res/layout/ 存放用户界面的布局文件；
+/res/menu/ 存放为应用程序定义的各种菜单的资源，包括选项菜单、子菜单、上下文菜单；
+/res/raw/ 存放任意类型的原生资源；
+/res/values/ 存放各种简单值得XML文件，包括字符串值、整数值、颜色值、数组等，这些资源文件的根元素都是<resources />,它的子元素包括<string />、<color />、<array />、<style />、<dimen />，一般将不同类型的资源分布写在不同的xml中例如：strings.xml；
+/res/xml/  任意的XML文件；

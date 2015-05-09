@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="文件名关键字"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".gif" />
+
+        <CheckBox
+            android:id="@+id/jpg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".jpg" />
+
+        <CheckBox
+            android:id="@+id/png"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".png" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+
+    </LinearLayout>
+
+		<ListView 
+		    android:id="@+id/list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		 ></ListView>
+</LinearLayout>
