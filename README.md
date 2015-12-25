@@ -1,4 +1,4 @@
-# Ten_thound_hours
+# Ten_thousand_hours
 ###KEEP ON PUSHING ~
 ---
 ###这里放的是我平日里的一些练习，
