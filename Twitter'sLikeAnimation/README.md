@@ -1,7 +1,7 @@
 Twitter的like动画安卓版本
 ===
 
-英文原文：http://frogermcs.github.io/twitters-like-animation-in-android-alternative/
+[英文原文：作者的博客](http://frogermcs.github.io/twitters-like-animation-in-android-alternative/)
 
 作者使用的是星星的图标，暂时按作者的来，以后可以拓展
 
