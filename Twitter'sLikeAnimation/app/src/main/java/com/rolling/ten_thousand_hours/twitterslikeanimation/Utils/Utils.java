@@ -12,7 +12,7 @@ public class Utils {
     public static double mapValueFromRangeToRange (double value,
            double fromLow, double fromHigh, double toLow, double toHigh) {
 
-        return toLow + ((value - fromLow) / (fromHigh - fromLow) - (toHigh - toLow));
+        return toLow + ((value - fromLow) / (fromHigh - fromLow) * (toHigh - toLow));
     }
 
     /**

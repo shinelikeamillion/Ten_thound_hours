@@ -1,4 +1,4 @@
-#一些笔记：
+﻿#一些笔记：
 
 ### PorterDuffXfermode
 
@@ -11,6 +11,8 @@
 - setStrokeWidth: 设置空心的边框宽度
 - getColor： 获得画笔的颜色
 - getAlpha: 得到画笔的Alpha值
+- new Paint(Paint.FILTER_BITMAP_FLAG | Paint.DITHER_FLAG | Paint.ANTI_ALIAS_FLAG) 
+-                  使位图过滤的位掩码  有利抖动的位2掩码    抗锯齿的标志
 
 ### Bitmap.Config: 图片的色彩细节（存储方法）
     -- A(Alpha): 透明度; R(Red)/G(Green)/B(Blue)三原色

@@ -18,15 +18,16 @@ import com.rolling.ten_thousand_hours.twitterslikeanimation.Utils.Utils;
  */
 public class CircleView extends View{
 
-    private static final int START_COLOR = 0xffff5722;
-    private static final int END_COLOR = 0xffffc107;
+    private static final int START_COLOR = 0xFFFF5722;
+    private static final int END_COLOR = 0xFFFFc107;
 
     /**
      * 可根据起始值和结束值以及偏移量生成一个新的颜色，通常用于颜色渐变
      */
     private ArgbEvaluator argbEvaluator = new ArgbEvaluator();
 
-    private Paint circlePaint, maskPaint;
+    private Paint circlePaint = new Paint();
+    private Paint maskPaint = new Paint();
 
     private Bitmap tempBitmap;
     private Canvas tempCanvas;
@@ -46,15 +47,17 @@ public class CircleView extends View{
         init();
     }
 
-    private void init() {
+    public CircleView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
 
-        circlePaint = new Paint();
-        maskPaint = new Paint();
+    private void init() {
 
         // 将画圆的画笔风格设置为实心
         circlePaint.setStyle(Paint.Style.FILL);
 
-        // 设置Paint与已有的Canvas图像交互为Clear（绘制不会提交的画布上）
+        // 设置内圆Paint与已有的Canvas图像交互为Clear（绘制不会提交的画布上）
         maskPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
     }
 
@@ -62,7 +65,7 @@ public class CircleView extends View{
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         maxCircleSize = w / 2;
-        tempBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
+        tempBitmap = Bitmap.createBitmap(getWidth(), getWidth(), Bitmap.Config.ARGB_8888);
         tempCanvas = new Canvas(tempBitmap);
     }
 
@@ -91,20 +94,18 @@ public class CircleView extends View{
         updateCircleColor();
         postInvalidate();
     }
-
-    public float getOuterCircleRadiusProgress () {
-        return outerCircleRadiusProgress;
-    }
-
     private void updateCircleColor () {
         float colorProgress = (float) Utils.clamp(
              outerCircleRadiusProgress, 0.5, 1);
         colorProgress = (float) Utils.mapValueFromRangeToRange(
              colorProgress, 0.5f, 1f, 0f, 1f);
-        this.circlePaint.setColor(
-             (Integer) argbEvaluator.evaluate(colorProgress, START_COLOR, END_COLOR)
-        );
+        this.circlePaint.setColor((Integer) argbEvaluator.evaluate(colorProgress, START_COLOR, END_COLOR));
     }
+	
+    public float getOuterCircleRadiusProgress () {
+        return outerCircleRadiusProgress;
+    }
+
 
     // 用到了反射的知识
     public static final Property<CircleView, Float>
